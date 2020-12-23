@@ -1,0 +1,35 @@
+.item {
+    width: 50px;
+    height: 50px;
+    position: relative;
+
+    font-family: sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+    color: white;
+
+    background-color: #154360;
+
+    border: 1px solid black;
+
+    &--red {
+        background-color: #c70039;
+    }
+    &--black {
+        background-color: black;
+    }
+    &--green {
+        background-color: #117a65;
+    }
+    &--blue {
+        background-color: #154360;
+    }
+    &__bet{
+        position: absolute;
+        bottom: 0;
+        left: 2px;
+        font-size: 0.5em;
+        color: gold;
+    }
+}

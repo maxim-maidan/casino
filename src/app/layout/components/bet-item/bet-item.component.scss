@@ -1,0 +1,48 @@
+.bet-item {
+    width: 435px;
+
+    &__title {
+        width: 100%;
+        padding: 5px 0;
+
+        font-size: 2em;
+        font-family: sans-serif;
+        text-align: center;
+
+        color: white;
+        background-color: #ae0938;
+        border-top: 1px solid white;
+    }
+    &__chips {
+        padding: 30px 20px 32px;
+
+        background-color: #154360;
+    }
+    &__chip {
+        margin: 20px auto;
+        box-shadow: 3px 3px 5px gold;
+        border-radius: 50%;
+    }
+    &__button {
+        width: 100%;
+        padding: 6px;
+
+        font-size: 2em;
+        font-family: sans-serif;
+        color: white;
+
+        background-color: #ae0938;
+    }
+}
+.info{
+    padding: 6px 20px;
+    
+    
+    font-size: 2em;
+    font-family: sans-serif;
+    color: white;
+
+    border: 2px solid black;
+
+    background-color: #117A65;
+}

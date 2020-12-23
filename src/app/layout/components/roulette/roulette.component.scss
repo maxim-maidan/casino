@@ -1,0 +1,55 @@
+@import "colors.scss";
+.roulette-field {
+    width: 676px;
+
+    padding-top: 27px;
+
+    background-color: #154360;
+    &__roulette {
+        width: 270px;
+        height: 270px;
+    }
+    &__button {
+        padding: 10px 0;
+        width: 100%;
+        font-size: 2em;
+        color: white;
+        background-color: #117a65;
+    }
+}
+.stats {
+    width: 300px;
+    font-family: sans-serif;
+
+    text-align: center;
+    background-color: #154360;
+    color: white;
+
+    &__title {
+        font-size: 2em;
+        font-weight: 400;
+    }
+    &__result {
+        width: 150px;
+        height: 150px;
+        margin: 10px auto;
+
+        font-size: 3em;
+
+        background-color: #c70039;
+        border: 1px solid white;
+    }
+    &__subtitle {
+        font-size: 1.5em;
+        &--won {
+            color: #117a65;
+        }
+        &--lose {
+            color: #c70039;
+        }
+    }
+    &__sum {
+        font-size: 1.7em;
+        margin: 10px 0;
+    }
+}

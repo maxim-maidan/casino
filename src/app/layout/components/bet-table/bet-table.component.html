@@ -1,0 +1,10 @@
+<div class="table">
+    <div class="table__wrapper flex fd-row wrap">
+        <app-bet-table-item
+            *ngFor="let item of items"
+            [item]="item"
+            (itemSelected)="itemSelected($event)"
+        >
+        </app-bet-table-item>
+    </div>
+</div>

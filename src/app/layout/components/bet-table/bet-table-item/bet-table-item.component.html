@@ -1,0 +1,16 @@
+
+<div 
+    class="item item--{{item.color}} flex jc-center fd-column" 
+    (click)="selectedItem(item)"
+    [style.width]="item.size.width + 'px'"
+    [style.height]="item.size.height + 'px'"
+    [style.margin-top]="!item.value[0]? '-100%' : '0px'"
+>
+    {{item.name}}  
+    <div 
+        class="item__bet"
+        *ngIf="item.bet"
+    >
+        {{item.bet}}
+    </div>
+</div>

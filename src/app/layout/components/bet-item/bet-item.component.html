@@ -1,1 +1,17 @@
-<p>bet-item works!</p>
+<div class="bet-item flex fd-column">
+    <div class="bet-item__title uppercase">Chips</div>
+    <div class="bet-item__chips flex fd-row jc-sa wrap">
+        <app-chip class="bet-item__chip"
+            *ngFor="let chip of chips"
+            [chip] = "chip"
+            [style.box-shadow] = "chip.isSelected ? '1px 1px 40px 1px gold': 'none'"
+            (chipSelected) = "chipSelected($event)"            
+        >
+        </app-chip>
+    </div>
+    <div class="bet-item__info info flex fd-row jc-sb">
+        <p class="info__title">Bank</p>
+        <p class="info__sum">{{bank}}</p>
+    </div>
+    <button class="bet-item__button uppercase" (click)="clearBets()">Clear all bets</button>
+</div>

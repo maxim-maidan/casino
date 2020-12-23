@@ -1,1 +1,18 @@
-<p>main works!</p>
+<app-header></app-header>
+<div class="main flex fd-row jc-sa">
+    <app-bet-item
+        [bank] = "bank"
+        (setChip)="setChip($event)"
+        (clearAllBets)="clearAllBets()"
+    >
+    </app-bet-item>
+    <div class="main__wrapper">
+        <app-roulette></app-roulette>
+        <app-bet-table
+            (selectItem)="selectItem($event)"
+        >
+        </app-bet-table>
+    </div>
+    <app-bet-counter></app-bet-counter>
+</div>
+<app-footer></app-footer>
