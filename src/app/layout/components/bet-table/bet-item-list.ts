@@ -289,6 +289,7 @@ export const items = [
     name: 1,
     value: [1],
     bet: 0,
+    coefficient: 36,
     color: "red",
     size: {
       width: 50,

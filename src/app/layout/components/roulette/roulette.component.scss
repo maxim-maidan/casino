@@ -1,10 +1,13 @@
 @import "colors.scss";
 .roulette-field {
-    width: 676px;
+    width: 674px;
 
     padding-top: 27px;
 
     background-color: #154360;
+    border: 1px solid black;
+    border-bottom: none;
+    border-top: 1px solid white;
     &__roulette {
         width: 270px;
         height: 270px;
@@ -36,16 +39,25 @@
 
         font-size: 3em;
 
-        background-color: #c70039;
         border: 1px solid white;
+
+        &--red{
+            background-color: $red;
+        }
+        &--black{
+            background-color: black;
+        }
+        &--green{
+            background-color: $green;
+        }
     }
     &__subtitle {
         font-size: 1.5em;
         &--won {
-            color: #117a65;
+            color: $green;
         }
         &--lose {
-            color: #c70039;
+            color: $green;
         }
     }
     &__sum {

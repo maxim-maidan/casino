@@ -1,3 +1,33 @@
 .bet-counter{
     width: 425px;
+    border-top: 1px solid white ;
+    &__frame{
+        width: 425px;
+        height:  532px;
+        border: none;
+        justify-content: flex-end;
+    }
+    &__button{
+        width: 33.3%;
+        padding: 15px;
+    
+        font-size: 1em;
+        font-family: sans-serif;
+        color: white;
+        text-transform: uppercase;
+    
+        background-color: #ae0938;
+    }
+    &__header{
+        width: 100%;
+        height: 47px;
+    
+        font-size: 2em;
+        font-family: sans-serif;
+        color: white;
+        text-transform: uppercase;
+        text-align: center;
+    
+        background-color: #ae0938;
+    }
 }

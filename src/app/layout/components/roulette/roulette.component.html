@@ -1,10 +1,10 @@
 <div class="roulette-field flex fd-row jc-sa wrap"> 
-    <img class="roulette-field__roulette" src="./assets/roulette.png">
+    <img class="roulette-field__roulette" src="./assets/roulette.png" id="roulette">
     <div class="roulette-field__stats stats flex fd-column">
         <p class="stats__title uppercase">Result</p>
-        <div class="stats__result flex fd-column jc-center">3</div>
+        <div class="stats__result stats__result--{{wonColor}} flex fd-column jc-center">{{wonNumber}}</div>
         <p class="stats__subtitle stats__subtitle--won">You won</p>
-        <p class="stats__sum">100000$</p>
+        <p class="stats__sum">{{wonSummary}}$</p>
     </div> 
-    <button class="roulette-field__button uppercase">Spin</button>
+    <button class="roulette-field__button uppercase" (click) = "spin()">Spin</button>
 </div>

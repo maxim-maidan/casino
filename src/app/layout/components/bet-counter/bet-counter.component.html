@@ -1,3 +1,13 @@
-<div class="bet-counter">
-    
+<div class="bet-counter flex fd-row wrap">
+    <div class="bet-counter__header flex fd-column jc-center">History</div>
+    <div class="bet-counter__frame flex fd-column">
+        <app-bet-counter-item
+            *ngFor="let log of rouletteLogs"
+            [log]="log"
+        >
+        </app-bet-counter-item>
+    </div>
+    <button class="bet-counter__button">Statistic</button>
+    <button class="bet-counter__button">Share</button>
+    <button class="bet-counter__button" (click)="clearRouletteLog()">clear</button>
 </div>

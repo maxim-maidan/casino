@@ -7,7 +7,13 @@
     >
     </app-bet-item>
     <div class="main__wrapper">
-        <app-roulette></app-roulette>
+        <app-roulette
+            [wonNumber] = "wonNumber"
+            [wonSummary] = "wonSummary"
+            [wonColor] = "wonColor"
+            (spinRoulette)="spinRoulette()"
+        >
+        </app-roulette>
         <app-bet-table
             (selectItem)="selectItem($event)"
         >

@@ -15,6 +15,7 @@ import { HeaderComponent } from './layout/components/header/header.component';
 import { FooterComponent } from './layout/components/footer/footer.component';
 import { BetTableComponent } from './layout/components/bet-table/bet-table.component';
 import { BetTableItemComponent } from './layout/components/bet-table/bet-table-item/bet-table-item.component';
+import { BetCounterItemComponent } from './layout/components/bet-counter/bet-counter-item/bet-counter-item.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { BetTableItemComponent } from './layout/components/bet-table/bet-table-i
     HeaderComponent,
     FooterComponent,
     BetTableComponent,
-    BetTableItemComponent
+    BetTableItemComponent,
+    BetCounterItemComponent
   ],
   imports: [
     BrowserModule,
